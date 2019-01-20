@@ -1,13 +1,13 @@
-package wsaults.home;
+package com.wsaults.budget;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HomeApplication {
+public class BudgetApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HomeApplication.class, args);
+		SpringApplication.run(BudgetApplication.class, args);
 	}
 
 }
