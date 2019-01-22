@@ -1,17 +1,18 @@
 package com.wsaults.budget;
 
-import org.springframework.stereotype.Repository;
+import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 
-@Repository
-public interface UserRepository {
-  User find(Long id);
+public interface UserRepository extends CrudRepository<User, Long> {
 
-  User create (User id);
+  List<User> findByName(String name);
+  // User find(Long id);
 
-  List<User> list();
+  // User create (User id);
 
-  User update(Long id, User user);
+  // List<User> list();
 
-  void delete(Long id);
+  // User update(Long id, User user);
+
+  // void delete(Long id);
 }

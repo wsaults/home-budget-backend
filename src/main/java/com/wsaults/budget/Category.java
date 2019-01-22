@@ -15,6 +15,13 @@ public class Category {
 
   private Float amount;
 
+  protected Category() {}
+
+  public Category(String name, Float amount) {
+    this.name = name;
+    this.amount = amount;
+  }
+
   public long getId() {
     return id;
   }

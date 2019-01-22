@@ -15,42 +15,42 @@ public class UserController {
     this.userRepository = userRepository;
   }
 
-  @PostMapping
-  public ResponseEntity create(@RequestBody User user) {
-    User createdUser = userRepository.create(user);
-    return new ResponseEntity<>(createdUser, HttpStatus.CREATED);
-  }
+  // @PostMapping
+  // public ResponseEntity create(@RequestBody User user) {
+  //   User createdUser = userRepository.create(user);
+  //   return new ResponseEntity<>(createdUser, HttpStatus.CREATED);
+  // }
 
-  @GetMapping("{id}")
-  public ResponseEntity<User> read(@PathVariable long id) {
-    User user = userRepository.find(id);
+  // @GetMapping("{id}")
+  // public ResponseEntity<User> read(@PathVariable long id) {
+  //   User user = userRepository.find(id);
 
-    if (user == null) {
-      return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-    }
+  //   if (user == null) {
+  //     return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+  //   }
 
-    return new ResponseEntity<>(user, HttpStatus.OK);
-  }
+  //   return new ResponseEntity<>(user, HttpStatus.OK);
+  // }
 
-  @GetMapping
-  public ResponseEntity<List<User>> list() {
-    return new ResponseEntity<>(userRepository.list(), HttpStatus.OK);
-  }
+  // @GetMapping
+  // public ResponseEntity<List<User>> list() {
+  //   return new ResponseEntity<>(userRepository.list(), HttpStatus.OK);
+  // }
 
-  @PutMapping("{id}")
-  public ResponseEntity update (@PathVariable long id, @RequestBody User user) {
-    User updateUser = userRepository.update(id, user);
+  // @PutMapping("{id}")
+  // public ResponseEntity update (@PathVariable long id, @RequestBody User user) {
+  //   User updateUser = userRepository.update(id, user);
 
-    if (updateUser == null) {
-      return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-    }
+  //   if (updateUser == null) {
+  //     return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+  //   }
 
-    return new ResponseEntity<>(updateUser, HttpStatus.OK);
-  }
+  //   return new ResponseEntity<>(updateUser, HttpStatus.OK);
+  // }
 
-  @DeleteMapping("{id}")
-  public ResponseEntity<User> delete(@PathVariable long id) {
-    userRepository.delete(id);
-    return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-  }
+  // @DeleteMapping("{id}")
+  // public ResponseEntity<User> delete(@PathVariable long id) {
+  //   userRepository.delete(id);
+  //   return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+  // }
 }

@@ -12,6 +12,8 @@ public class User {
   private long id;
   private String name;
 
+  protected User() {}
+
   public User(String name) {
     this.name = name;
   }
