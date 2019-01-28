@@ -15,11 +15,14 @@ public class Category {
 
   private Float amount;
 
+  private Float max;
+
   protected Category() {}
 
-  public Category(String name, Float amount) {
+  public Category(String name, Float amount, Float max) {
     this.name = name;
     this.amount = amount;
+    this.max = max;
   }
 
   public long getId() {
@@ -40,5 +43,13 @@ public class Category {
 
   public void setAmount(Float amount) {
     this.amount = amount;
+  }
+
+  public Float getMax() {
+    return max;
+  }
+
+  public void setMax(Float max) {
+    this.max = max;
   }
 }

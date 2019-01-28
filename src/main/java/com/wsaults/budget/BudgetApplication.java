@@ -38,8 +38,8 @@ public class BudgetApplication {
 			log.info("");
 
 			// Category
-			categoryRepository.save(new Category("Fuel", 100.0f));
-			categoryRepository.save(new Category("Food", 50.0f));
+			categoryRepository.save(new Category("Fuel", 25.0f, 100.0f));
+			categoryRepository.save(new Category("Food", 0.0f, 50.0f));
 
 			log.info("Categories found with findAll():");
 			log.info("-------------------------------");
