@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: home-budget-backend
+
+cors:
+  allowed:
+    methods: HEAD, GET, POST, PUT, DELETE, PATCH, OPTIONS
+    headers: Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Access-Control-Allow-Origin
+    exposed: X-AUTH-TOKEN, APP-TOKEN-KEY, X-XSRF-TOKEN, Content-Type, Content-Disposition
+    domains:
+      - http://localhost:4200

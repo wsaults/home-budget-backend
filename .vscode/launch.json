@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-BudgetApplication<budget>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.wsaults.budget.BudgetApplication",
+      "projectName": "budget",
+      "args": "--spring.profiles.active=local"
+    }
+  ]
+}
