@@ -38,8 +38,11 @@ public class BudgetApplication {
 			log.info("");
 
 			// Category
-			categoryRepository.save(new Category("Fuel", 25.0f, 100.0f));
-			categoryRepository.save(new Category("Food", 0.0f, 50.0f));
+			categoryRepository.save(new Category("Fuel", 25.0f, 100.0f, "fas fa-gas-pump"));
+			categoryRepository.save(new Category("Groceries", 0.0f, 500.0f, "fas fa-utensils"));
+			categoryRepository.save(new Category("Shopping", 0.0f, 50.0f, "fas fa-shopping-bag"));
+			categoryRepository.save(new Category("Restaurant", 10.0f, 50.0f, "fas fa-cheeseburger"));
+			categoryRepository.save(new Category("Health", 0.0f, 50.0f, "fas fa-briefcase-medical"));
 
 			log.info("Categories found with findAll():");
 			log.info("-------------------------------");
