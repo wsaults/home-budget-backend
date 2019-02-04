@@ -35,14 +35,14 @@ public class BudgetApplication {
 			for (User user : userRepository.findAll()) {
 				log.info(user.toString());
 			}
-			log.info("");
 
 			// Category
-			categoryRepository.save(new Category("Fuel", 25.0f, 100.0f));
-			categoryRepository.save(new Category("Groceries", 25.50f, 500.0f));
-			categoryRepository.save(new Category("Shopping", 47.0f, 50.0f));
-			categoryRepository.save(new Category("Restaurant", 10.0f, 50.0f));
+			categoryRepository.save(new Category("Fuel", 0.0f, 240.0f));
+			categoryRepository.save(new Category("Groceries", 0.0f, 400.0f));
+			categoryRepository.save(new Category("Shopping", 0.0f, 50.0f));
+			categoryRepository.save(new Category("Restaurant", 0.0f, 100.0f));
 			categoryRepository.save(new Category("Health", 0.0f, 50.0f));
+			categoryRepository.save(new Category("Vitamins", 0.0f, 200.0f));
 
 			log.info("Categories found with findAll():");
 			log.info("-------------------------------");
