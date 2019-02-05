@@ -8,4 +8,4 @@ cors:
     headers: Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization, Access-Control-Allow-Origin
     exposed: X-AUTH-TOKEN, APP-TOKEN-KEY, X-XSRF-TOKEN, Content-Type, Content-Disposition
     domains:
-      - https://budget-frontend-shy-leopard.apps.pcfone.io/
+      - https://budget-frontend-shy-leopard.apps.pcfone.io
